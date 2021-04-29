@@ -1,0 +1,73 @@
+.guarantee {
+    padding-bottom: 8.9rem;
+    position: relative;
+    .divider {
+        width: 100%;
+        height: 15rem;
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: #fff;
+    }
+   .title {
+       margin-top: 4.8rem;
+   }
+    &__wrapper{
+        margin-top: 4.4rem;
+        display: grid;
+        grid-template-columns: 36.3vw 18vw repeat(2, 11.7vw) 13.1vw;
+        div{
+            margin-top: 6.2rem;
+            &:first-of-type {
+                margin-top: 2.6rem;
+                img{ 
+                    max-width: 100%;
+                }
+            }
+            &:nth-child(odd) {
+                display: flex;
+                flex-direction: column;
+            
+            }
+            img {
+                display: block;
+                max-width: 10.6rem;
+                margin: 0 auto;
+            }
+            span{
+                margin-top: 2rem;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                text-align: center;
+            }
+        }
+    }
+    &__list {
+        margin-left: 7.5vw;
+        margin-bottom: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+            margin-bottom: 3rem;
+            position: relative;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 5.3rem;
+                width: 5.3rem;
+                left: -7.5vw;
+                background: url('../img/icons/check.svg') no-repeat; 
+                background-size: 100%;
+            }
+        }
+       
+    }
+}

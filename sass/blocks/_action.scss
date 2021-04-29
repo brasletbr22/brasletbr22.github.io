@@ -1,0 +1,119 @@
+.action {
+    padding-top: 5.7rem;
+    padding-bottom: 4.5rem;
+    background-color: #C1EAE7;
+    box-shadow: 0px 4px 51px rgba(84, 84, 84, 0.25);
+    &__subtitle {
+        margin-bottom: 2rem;
+        padding-left: 10%;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        text-align: center;
+        b{
+            color: $main-color;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        &-first{
+            padding-top: 22rem;
+        }
+        &-price {
+            width: 40%;
+        }
+        &-form {
+            width: 30%;
+            align-items: normal;
+            text-align: center;
+        }
+        &-mobile {
+            display: none;
+        }
+        p {
+            padding-left: 10%;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: #000000;
+        }
+    }
+    &__img {
+        display: block;
+        width: 26.2vw;
+        max-width: 600px;
+        margin: 0 auto;
+        &-logo {
+            position: absolute;
+            top:-30%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;  
+            margin: 0;
+        }
+        &-mini {
+            margin-top: -5%;
+            margin-left: 10%;
+            width: 70%;
+            z-index: 0;
+        }
+    }
+    &__price {
+        width: 20vw;
+        margin: 0 auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2.4rem;
+        s {
+            margin-bottom: 2.5rem;
+            color: $main-color;
+        }
+    }
+    &__notice {
+        margin-top: 13px;
+        font-weight: 700;
+        color: $khaki;
+        &-mini {
+            align-self: start;
+            padding-left: 50px;
+            font-size: 1.2rem;
+        }
+        &-mobile {
+            display: none;
+        }
+    }
+    .order-form {
+        margin-top: 0;
+        padding: 0;
+        box-shadow: none;
+        &-input {
+           width: 20.14vw;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        &-label-r {
+            margin-left: 10%;
+        }
+        &-title {
+            margin-bottom: 19px;
+        }
+        &-btn {
+            padding: 1.8rem 6.5rem;
+        }
+        &-notice {
+            font-size: 1.4rem;
+            margin-bottom: 2.7rem;
+            margin-top: 1.3rem;
+        }
+        
+    }
+}

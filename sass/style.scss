@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'variables';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+
+.container {
+    max-width: 88.8vw;
+    margin: 0 auto;
+}
+.show {
+    opacity: 1;
+    z-index: 1050;
+    transition: .5 all;;
+}
+.hide {
+    opacity: 0;
+    z-index: -10;
+    transition: .5 all;;
+}
+
+@import 'blocks/popup';
+@import 'blocks/titles';
+@import 'blocks/timer';
+@import 'blocks/price';
+@import 'blocks/attention';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/order';
+@import 'blocks/steps';
+@import 'blocks/guarantee';
+@import 'blocks/varieties';
+@import 'blocks/action';
+@import 'blocks/recommendations';
+@import 'blocks/problems';
+@import 'blocks/feedback';
+@import 'blocks/ordering';
+@import 'blocks/footer';
+@import 'media';
